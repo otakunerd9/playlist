@@ -17,10 +17,12 @@
 
 // Songs
 var mySong = {
-	"title":"24K Magic",
-	"artist":"Bruno Mars",
-	"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-	"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+	"title":"Fly Me To The Moon",
+	"artist":"Frank Sinatra",
+	"mp3-url":"https://open.spotify.com/track/2dR5WkrpwylTuT3jRWNufa",
+	"image-url":"https://img0.etsystatic.com/000/0/6703118/il_570xN.302833768.jpg",
+	"songLength": 2.27,
+	
 }
 
 var myPlayList = [
