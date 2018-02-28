@@ -47,20 +47,42 @@ var myPlayList = [
 
 ]
 
+function playlistsong(index) {
+    var recName = myPlayList[index].title;
+    var recTime = myPlayList[index].artist;
+    var recSong = myPlayList[index]['image-url'];
+    
+    var sentence1 = "<h3>" + recName + "</h3>";
+    var sentence2 = "<p>" + recTime + "</p>";
+    var sentence3 = "<img src=" +recSong+ " alt='24K Magic Cover' >" ;
+    
+    var favSong = "<div id='favSong'>" + sentence1 + sentence2 + sentence3 + "</div>";
+    
+    $("#favoriteSong").append(favSong);
+}
 
 
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
-  
-
+ 
+displayList();
 
 
 });
 
 function displayList(){
 
-
-  
+for(var i = 0; i < myPlayList.length; i++) {
+   var title = myPlayList[i].title;
+   var artist = myPlayList[i].artist;
+   var mp3URL = myPlayList[i]["mp3-url"];
+   var imageURL = myPlayList[i]["image-url"];
+   $('.songs').append("<h3>" + title +  "</h3>")
+   $('.songs').append("<h3>" + artist +  "</h3>")
+   $('.songs').append("<h3>" + mp3URL +  "</h3>")
+   $('.songs').append("<img src=" + imageURL + ">")
+}
+ 
 }
 
 function clearList(){
